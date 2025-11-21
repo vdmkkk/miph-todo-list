@@ -3,11 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO LIST</title>
   </head>
+
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <button id="add-task" class="add-task">Добавить задачу</button>
+      <div class="columns-list">
+        <div class="column" id="todo">
+          <h5>TODO</h5>
+        </div>
+        <div class="column" id="in-progress">
+          <h5>In Progress</h5>
+        </div>
+        <div class="column" id="review">
+          <h5>Review</h5>
+        </div>
+        <div class="column" id="done">
+          <h5>Done</h5>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
